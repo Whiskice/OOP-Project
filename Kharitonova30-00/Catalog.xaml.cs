@@ -23,49 +23,7 @@ namespace Kharitonova30_00
         public Catalog()
         {
             InitializeComponent();
-            Cars car1 = new Cars()
-            {
-                id = 1,
-                carNumber = "А123НР47",
-                carStatus = "Оплачен",
-                carType = "Превышение скорости",
-                carCost = 250
-            };
-            Cars car2 = new Cars()
-            {
-                id = 1,
-                carNumber = "П277ЛВ47",
-                carStatus = "Оплачен",
-                carType = "Проезд под знак Разворот запрещен",
-                carCost = 1000
-            };
-            Cars car3 = new Cars()
-            {
-                id = 1,
-                carNumber = "Н184ГР48",
-                carStatus = "Не оплачен",
-                carType = "Вождение без страховки",
-                carCost = 2000
-            };
-            Cars car4 = new Cars()
-            {
-                id = 1,
-                carNumber = "Г222ВО90",
-                carStatus = "Оплачен",
-                carType = "Вождение в нетрезвом виде",
-                carCost = 10000
-            };
-            Cars car5 = new Cars()
-            {
-                id = 1,
-                carNumber = "Н404ЕО47",
-                carStatus = "Не оплачен",
-                carType = "Помогите, я застрял в матрице",
-                carCost = 404
-            };
-
-            List<Cars> carList = new List<Cars>() { car1, car2, car3, car4, car5 };
-            ListCatalog.ItemsSource = carList.ToList();
+            ListCatalog.ItemsSource = AppFrame.carList.ToList();
         }
     }
 }

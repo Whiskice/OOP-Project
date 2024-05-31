@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Frame x:Name="FrameMain" Content="Frame" Height="300" Margin="0,0,0,134"/>
-        <Button x:Name="AddButton" Content="Добавить" HorizontalAlignment="Left" Margin="70,341,0,0" VerticalAlignment="Top" Width="100" Height="30" FontFamily="GOST type B" FontSize="14" FontWeight="Bold"/>
-        <Button x:Name="DeleteButton" Content="Удалить" HorizontalAlignment="Left" Margin="188,341,0,0" VerticalAlignment="Top" Width="100" Height="30" FontFamily="GOST type B" FontSize="14" FontWeight="Bold"/>
+        <Frame x:Name="FrameMain" Content="Frame" Height="300" Margin="0,22,0,112" NavigationUIVisibility="Visible"/>
+        <Button x:Name="AddButton" Content="Добавить" HorizontalAlignment="Left" Margin="70,0,0,63" Width="100" FontFamily="GOST type B" FontSize="14" FontWeight="Bold" Height="30" VerticalAlignment="Bottom" Click="AddButton_Click"/>
+        <Button x:Name="DeleteButton" Content="Удалить" Margin="0,0,69,63" FontFamily="GOST type B" FontSize="14" FontWeight="Bold" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="100"/>
     </Grid>
 </Window>

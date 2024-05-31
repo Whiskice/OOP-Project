@@ -26,5 +26,10 @@ namespace Kharitonova30_00
             AppFrame.frameMain = FrameMain;
             AppFrame.frameMain.Navigate(new Catalog());
         }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            AppFrame.frameMain.Navigate(new AddProduct());
+        }
     }
 }
